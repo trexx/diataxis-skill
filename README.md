@@ -18,7 +18,9 @@ The skill helps Claude **classify** content by the need it serves (using the Di�
 "compass"), **keep the four types from bleeding into each other**, and **write, name, and
 organise** each kind correctly.
 
-## What's in here
+## Overview
+
+### What's in here
 
 ```
 diataxis/                     <- the skill (drop this into any .claude/skills/)
@@ -29,7 +31,9 @@ diataxis/                     <- the skill (drop this into any .claude/skills/)
     templates.md              <- copy-paste skeletons for each type and for landing pages
 ```
 
-## Install
+## Usage
+
+### Install
 
 Copy (or clone/symlink) the `diataxis/` folder into a skills directory. Keep the folder
 named `diataxis`.
@@ -56,7 +60,7 @@ git submodule add <this-repo-url> .claude/skills/diataxis
 
 Restart Claude Code (or start a new session) so the skill is picked up.
 
-## Use
+### Use
 
 - **Automatic:** the skill's description triggers it whenever you ask Claude to write,
   review, restructure, or diagnose documentation.
@@ -65,7 +69,11 @@ Restart Claude Code (or start a new session) so the skill is picked up.
 Try: *"Write docs for this feature using Diátaxis"*, *"Is this page a tutorial or a
 how-to?"*, or *"Audit our docs against Diátaxis."*
 
-## Attribution and licence
+## Development
+
+The skill is plain Markdown with no build step: `diataxis/SKILL.md` is the skill itself, and `diataxis/references/` holds the reference material it points to. Edit the files in place; an installed copy picks up changes if it is a symlink, otherwise copy the folder again (see Install).
+
+## Licence
 
 The Diátaxis framework is created by **Daniele Procida** and published at
 <https://diataxis.fr> under **[CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)**.
